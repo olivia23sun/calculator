@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>culculator</title>
+    <link rel="stylesheet" href="\init.css">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+ <div class="app">
+        <div class="panel">
+            <div class="history">123</div>
+            <div class="output">456</div>
+        </div>
+        <button onclick="calculator.delete()">DEL</button>
+        <button onclick="calculator.division()">/</button>
+        <button onclick="calculator.times()">*</button>
+        <button onclick="calculator.minus()">-</button>
+        <button onclick="calculator.numberclick('7')">7</button>
+        <button onclick="calculator.numberclick('8')">8</button>
+        <button onclick="calculator.numberclick('9')">9</button>
+        <button class="col-2" onclick="calculator.add()">+</button>
+        <button onclick="calculator.numberclick('4')">4</button>
+        <button onclick="calculator.numberclick('5')">5</button>
+        <button onclick="calculator.numberclick('6')">6</button>
+        <button onclick="calculator.numberclick('1')">1</button>
+        <button onclick="calculator.numberclick('2')">2</button>
+        <button onclick="calculator.numberclick('3')">3</button>
+        <button class="col-2" onclick="calculator.equal()">=</button>
+        <button onclick="calculator.clear()">AC</button>
+        <button onclick="calculator.numberclick('0')">0</button>
+        <button onclick="calculator.numberclick('.')">.</button>
+ </div>
+
+ <script src="\jquery.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>

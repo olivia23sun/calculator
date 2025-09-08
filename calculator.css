@@ -1,0 +1,52 @@
+    /* <style> */
+    
+        .app{
+            /*設定初始化高度*/
+            min-height: 100vh;
+            /* grid排版 */
+            display: grid;
+            /* grid排版 */
+            justify-content: center;
+            align-content: center;
+            /* content:作用對象是整個容器的所有仔元素 */
+
+            /* 設定行樹跟排數 */
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows:  minmax(100px auto) repeat(5,100px); 
+            /*minmax 這一列高度最少100 最高auto*/
+            /*repeat 要有5列 每列高度100px*/
+        }
+
+        .panel {
+            grid-column: 1/-1;
+            /* 從第一條線開始 → 跨到最後一條線結束。 
+            等於「佔滿整個 row」的意思。 */
+            background-color: rgb(43, 25, 1);
+            padding: 2% 1%;
+            text-align: right;
+        }
+        .output {
+            color: white;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .history {
+        	min-height: 30px;
+            color: rgb(161, 161, 161);
+        }
+
+        .app>button {
+            padding: 30%;
+            background-color: wheat;
+            font-weight: bold;
+        }
+        .app>button:hover{
+            background-color:rgba(245, 222, 179, 0.746);
+        }
+
+        .col-2{
+            grid-row:span 2;
+        }
+
+    /* </style> */
