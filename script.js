@@ -119,3 +119,4 @@ class Cauculator{
 }
 
 calculator = new Cauculator()
+hello = new Cauculator
