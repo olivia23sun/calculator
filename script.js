@@ -18,7 +18,7 @@ class Cauculator{
         // 當你 new Calculator() 時，JS 會自動執行裡面的程式。
         
         // 這裡 constructor 裡呼叫 this.update() 是為了初始化畫面，讓一開始 output 就顯示 "0"。
-        this.update();
+        this.update()
     }
     numberclick(number){//把資料傳進去data裡，並顯示出來
 
